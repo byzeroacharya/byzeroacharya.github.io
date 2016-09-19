@@ -1,29 +1,20 @@
 <?php
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Thank you for contact us. As early as possible  we will contact you '
-	);
-$to = 'ahmedtamseer3@gmail.com';
-$subject = @trim(stripslashes($_POST['subject']));
-$headers = "From: webmaster@example.com" . "\r\n" .
-"BCC: ahmedtamseer3@egmail.com";
-    $name = @trim(stripslashes($_POST['name']));
-    $email = @trim(stripslashes($_POST['email']));
-    $message = @trim(stripslashes($_POST['message']));
-$body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
-mail($to,$subject,$body,$headers);
-
-    echo json_encode($status);
-    die;
-?> 
-  <!--   $subject = @trim(stripslashes($_POST['subject']));
-
-    $email_from = $email;
-    $email_to = 'ahmedtamseer3@gmail.com';//replace with your email zonasa2016@gmail.com
-
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
-
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
-
-    ?> -->
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "ahmedtamseer3@example.com";
+  $email = $_REQUEST['email'];
+  $subject = "from".$_REQUEST['name'];
+  $comment = $_REQUEST['message'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {}
+?>

@@ -357,7 +357,7 @@ h2 {
 }
 
 .single-event img {
-    filter: grayscale(1);
+    filter: grayscale(0);
     z-index: 1;
     border: 10px solid transparent;
     margin-bottom: 0px;
@@ -366,7 +366,7 @@ h2 {
 }
 
 .single-event img:hover {
-    filter: grayscale(0);
+    filter: grayscale(1);
     border: 10px solid #fff;
     -webkit-box-shadow: 0px 0px 24px 6px rgba(0, 191, 150, 0.52);
     -moz-box-shadow: 0px 0px 24px 6px rgba(0, 191, 150, 0.52);
@@ -395,11 +395,11 @@ h2 {
 .even-control-right {
     position: absolute;
     font-size: 30px;
-    color: #fff;
+    color: #00BF96;
     top: 0;
     text-decoration: none;
     background-color: rgba(255,255,255,.5);
-    padding: 10px 20px;border-radius: 100%;
+    padding: 6px 15px;border-radius: 100%;
 }
 
 .even-control-left {
@@ -409,6 +409,8 @@ h2 {
 .even-control-right {
     right: 0;
 }
+.even-control-left:hover,
+.even-control-right:hover {color: #fff;background-color: rgba(0,191,150,.5);}
 
 /*************************
 *******About CSS**********
@@ -475,6 +477,7 @@ h2 {
     padding: 95px 0 90px;
     overflow: hidden;
 }
+#twitter h4{color: #00ABED;}
 
 .twit {
     position: absolute;
@@ -762,15 +765,32 @@ Show div fullscreen
 }
 .masonryImage .hiddenDiv .text h2{
     color: #00816A !important;
+    margin-bottom: 10px !important;
+}
+.masonryImage .hiddenDiv .text h3{
+    color: #00816A !important;
+    text-align: left !important;
+}
+.masonryImage .hiddenDiv .pics{
+    margin: 30px auto;
+    width: 70%;
 }
 .masonryImage .hiddenDiv .pics img{
     filter: grayscale(0) !important;
 }
+.masonryImage .hiddenDiv .text blockquote{border-color: #00816A;}
+.poem{text-align: center;font-style: oblique;}
+.poem p{margin: 30px 0px;}
 .masonryImage {
     margin: 20px 20px 20px;
     display: inline-block;
     cursor: pointer;
 }
+li p{font-size: 90%;padding: 5px 20px;}
+.text .btn-primary{background-color: #fff; border:2px solid #00816A;color: #00816A;border-radius: 5px;}
+.text .btn-primary:hover{background-color: #00816A; border-color:  #fff;color: #fff;-webkit-box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);
+    -moz-box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);
+box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
 .side{
     margin: 100px 10px;
     padding: 30px 20px;
@@ -798,6 +818,31 @@ Show div fullscreen
 }
 .eventContact .fa{font-size: 2em;float: left;}
 
+.separator-left-small {
+    height: 1px;
+    background-color: #0b9ff3;
+    width: 10%;
+    /*margin-left: 25%;*/
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.separator-left-style-small {
+    background-color: #FCFCFC;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0b9ff3;
+    border-width: 2px;
+    display: block;
+    height: 9px;
+    /*left: 50%;*/
+    margin-left: 0px;
+    margin-top: -4px;
+    position: absolute;
+    width: 9px;
+}
+.margin-left{margin-left: 50px;}
 @media only screen and (max-width: 500px) {
     .eventcall {
         display: none;
