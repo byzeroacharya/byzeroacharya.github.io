@@ -20,15 +20,6 @@ $(document).ready(function() {
     }
 
     menuToggle();
-$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-});
-$('/carousel-caption').animateCss('bounceIn');
 
     // Carousel Auto Slide Off
     $("#event-carousel, #twitter-feed, #sponsor-carousel").carousel({
@@ -115,8 +106,9 @@ $(".masonryImage").click(function() {
         $("body").css("overflow", "auto");
     }
 });
+
 $(".cart").hover(function() {
-    $(this).find("span").fadeIn('slow');
+    $(this).find("span").fadeIn('medium');
 },
-function() { $(this).find("span").fadeOut('medium');
+function() { $(this).find("span").hide();
 });

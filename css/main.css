@@ -174,11 +174,11 @@ h2 {
     right: 0px;
     top: 15%;
     /*width:450px;*/
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -ms-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
 .cart span {
@@ -626,11 +626,14 @@ h2 {
     color: #fff !important;
 }
 
-.contact-text a,.contact-address a {
+.contact-text a,
+.contact-address a {
     color: #fff !important;
     text-decoration: none;
 }
-.contact-text a:hover,.contact-address a:hover {
+
+.contact-text a:hover,
+.contact-address a:hover {
     color: #1B7B98 !important;
 }
 
@@ -838,6 +841,31 @@ li p {
     -o-animation-duration: 1s;
     -o-animation-delay: 1s;
 }
+
+@keyframes marg-left {
+    from {
+        margin-left: -5%;
+    }
+    to {
+        margin-left: 5%;
+    }
+}
+
+@keyframes move {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+.masonryImage img:hover {
+    animation: marg-left .2s steps(5);
+}
+.about-content .btn-primary:hover{border-radius: 10px;}
+.about-content .btn-primary:hover .fa{padding-left: 20px;}
+#clockdiv span:hover{animation: move 3s steps(50) infinite;cursor: pointer;border-radius: 20px;}
+
 
 @media only screen and (max-width: 500px) {
     .eventcall {
