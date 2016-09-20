@@ -783,6 +783,7 @@ box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
     width: 9px;
 }
 .margin-left{margin-left: 50px;}
+
 @media only screen and (max-width: 500px) {
     .eventcall {
         display: none;
@@ -793,6 +794,9 @@ box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
     width: 100%;
     padding: 0px;
 }
-.side{margin: 0px;}
+.side{margin: 0px;font-size: 12px;}
 .masonryImage>img{width: 300px;height: 200px;}
+#home{margin-top: 0px;top: 0px;}
+#home .slide img{height: 300px !important;}
+#home .slide .carousel-caption h2,#home .slide .carousel-caption h3,#home .slide .carousel-caption h4{font-size: 90% !important;}
 }
