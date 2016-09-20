@@ -1,11 +1,9 @@
-
-
 /*************************
 *******Typography******
 **************************/
 
 body {
-    font-family: 'Dosis', sans-serif,'arial';
+    font-family: 'Dosis', sans-serif, 'arial';
     font-size: 17px;
     color: #fff
 }
@@ -171,37 +169,40 @@ h2 {
 }
 
 .cart {
-  background-color: #00BF96;  
-  position: absolute;
-  right:0px;
-  top: 15%;
-  /*width:450px;*/
-   -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+    background-color: #00BF96;
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    /*width:450px;*/
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
-.cart span{display: none;}
+.cart span {
+    display: none;
+}
+
 .cart:hover {
-  right:0;
+    right: 0;
 }
-
 
 .cart a {
-  color: #FFFFFF;
-  display: block;
-  font-size: 19px;
-  text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    font-size: 19px;
+    text-transform: uppercase;
 }
 
 .cart a i {
-  font-size: 30px;  
-  padding: 20px 12px;
-  background-color: #A64030; 
-  margin-right: 3px;
+    font-size: 30px;
+    padding: 20px 12px;
+    background-color: #A64030;
+    margin-right: 3px;
 }
+
 
 /*************************
 *******Home CSS******
@@ -296,8 +297,6 @@ h2 {
     text-transform: uppercase;
     text-align: center;
 }
-
-
 
 
 /*************************
@@ -399,12 +398,17 @@ h2 {
     font-size: 30px;
     color: #00BF96;
     text-decoration: none;
-    background-color: rgba(255,255,255,.5);
-    padding: 6px 15px;border-radius: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 6px 15px;
+    border-radius: 100%;
 }
 
 .even-control-left:hover,
-.even-control-right:hover {color: #fff;background-color: rgba(0,191,150,.5);}
+.even-control-right:hover {
+    color: #fff;
+    background-color: rgba(0, 191, 150, .5);
+}
+
 
 /*************************
 *******About CSS**********
@@ -471,7 +475,10 @@ h2 {
     padding: 95px 0 90px;
     overflow: hidden;
 }
-#twitter h4{color: #00ABED;}
+
+#twitter h4 {
+    color: #00ABED;
+}
 
 .twit {
     position: absolute;
@@ -570,7 +577,6 @@ h2 {
 }
 
 
-
 /*************************
 ******Contact CSS****
 **************************/
@@ -615,20 +621,17 @@ h2 {
     display: block;
 }
 
-.contact-text address,.contact-address address{
-    color: #fff !important;}
-.contact-text a{
+.contact-text address,
+.contact-address address {
+    color: #fff !important;
+}
+
+.contact-text a,.contact-address a {
     color: #fff !important;
     text-decoration: none;
 }
-
-#contact-section .form-control {
-    border-color: #ae750d;
-    box-shadow: none;
-    outline: 0 none;
-    border-radius: 0;
-    color: #797979;
-    font-size: 18px;
+.contact-text a:hover,.contact-address a:hover {
+    color: #1B7B98 !important;
 }
 
 
@@ -684,6 +687,7 @@ h2 {
     font-size: 16px;
 }
 
+
 /*.........
 Show div fullscreen
 .........*/
@@ -703,44 +707,77 @@ Show div fullscreen
     text-align: justify;
     letter-spacing: 3px;
 }
-.masonryImage .hiddenDiv .text h2{
+
+.masonryImage .hiddenDiv .text h2 {
     color: #00816A !important;
     margin-bottom: 10px !important;
 }
-.masonryImage .hiddenDiv .text h3{
+
+.masonryImage .hiddenDiv .text h3 {
     color: #00816A !important;
     text-align: left !important;
 }
-.masonryImage .hiddenDiv .pics{
+
+.masonryImage .hiddenDiv .pics {
     margin: 30px auto;
     width: 70%;
 }
-.masonryImage .hiddenDiv .pics img{
+
+.masonryImage .hiddenDiv .pics img {
     filter: grayscale(0) !important;
 }
-.masonryImage .hiddenDiv .text blockquote{border-color: #00816A;}
-.poem{text-align: center;font-style: oblique;}
-.poem p{margin: 30px 0px;}
+
+.masonryImage .hiddenDiv .text blockquote {
+    border-color: #00816A;
+}
+
+.poem {
+    text-align: center;
+    font-style: oblique;
+}
+
+.poem p {
+    margin: 30px 0px;
+}
+
 .masonryImage {
     margin: 20px 20px 20px;
     display: inline-block;
     cursor: pointer;
 }
-li p{font-size: 90%;padding: 5px 20px;}
-.text .btn-primary{background-color: #fff; border:2px solid #00816A;color: #00816A;border-radius: 5px;}
-.text .btn-primary:hover{background-color: #00816A; border-color:  #fff;color: #fff;-webkit-box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);
-    -moz-box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);
-box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
-.side{
+
+li p {
+    font-size: 90%;
+    padding: 5px 20px;
+}
+
+.text .btn-default {
+    background-color: #fff;
+    border: 2px solid #00816A;
+    color: #00816A;
+    border-radius: 5px;
+}
+
+.text .btn-default:hover {
+    background-color: #00816A;
+    border-color: #fff;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 2px -1px rgba(197, 75, 52, 1);
+    -moz-box-shadow: 2px 2px 2px -1px rgba(197, 75, 52, 1);
+    box-shadow: 2px 2px 2px -1px rgba(197, 75, 52, 1);
+}
+
+.side {
     margin: 100px 10px;
     padding: 30px 20px;
     border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.75);
     text-align: left;
 }
-.eventContact{
+
+.eventContact {
     background-color: #00816A;
     padding: 15px;
     text-decoration: none;
@@ -749,14 +786,19 @@ box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
     margin: 2px;
     border-radius: 10px;
     text-align: right;
-    border:2px solid #fff;
+    border: 2px solid #fff;
 }
-.eventContact:hover{
-    border:2px solid #00816A;
+
+.eventContact:hover {
+    border: 2px solid #00816A;
     background-color: #fff;
     color: #00816A
 }
-.eventContact .fa{font-size: 2em;float: left;}
+
+.eventContact .fa {
+    font-size: 2em;
+    float: left;
+}
 
 .separator-left-small {
     height: 1px;
@@ -766,6 +808,7 @@ box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
     margin-top: 0px;
     margin-bottom: 20px;
 }
+
 .separator-left-style-small {
     background-color: #FCFCFC;
     -moz-border-radius: 20px;
@@ -782,21 +825,50 @@ box-shadow: 2px 2px 2px -1px rgba(197,75,52,1);}
     position: absolute;
     width: 9px;
 }
-.margin-left{margin-left: 50px;}
+
+.margin-left {
+    margin-left: 50px;
+}
+
+#home .animated {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-duration: 1s;
+    -o-animation-delay: 1s;
+}
 
 @media only screen and (max-width: 500px) {
     .eventcall {
         display: none;
     }
-.hiddenDiv {padding: 0px;}
-    .masonryImage .hiddenDiv .pics{
-    margin: 30px 0px;
-    width: 100%;
-    padding: 0px;
-}
-.side{margin: 0px;font-size: 12px;}
-.masonryImage>img{width: 300px;height: 200px;}
-#home{margin-top: 0px;top: 0px;}
-#home .slide img{height: 300px !important;}
-#home .slide .carousel-caption h2,#home .slide .carousel-caption h3,#home .slide .carousel-caption h4{font-size: 90% !important;}
+    .hiddenDiv {
+        padding: 0px;
+    }
+    .masonryImage .hiddenDiv .pics {
+        margin: 30px 0px;
+        width: 100%;
+        padding: 0px;
+    }
+    .side {
+        margin: 0px;
+        font-size: 12px;
+    }
+    .masonryImage>img {
+        width: 300px;
+        height: 200px;
+    }
+    #home {
+        margin-top: 0px;
+        top: 0px;
+    }
+    #home .slide img {
+        height: 300px !important;
+    }
+    #home .slide .carousel-caption h2,
+    #home .slide .carousel-caption h3,
+    #home .slide .carousel-caption h4 {
+        font-size: 90% !important;
+    }
 }
