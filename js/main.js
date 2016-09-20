@@ -1,19 +1,4 @@
-jQuery(function($) {
-    'use strict',
-
-    //Countdown js
-    $("#countdown").countdown({
-            date: "08 october 2016 12:00:00",
-            format: "on"
-        },
-
-        function() {
-
-
-        });
-
-
-
+$(document).ready(function() {
     //Scroll Menu
 
     function menuToggle() {
@@ -21,7 +6,7 @@ jQuery(function($) {
 
         if (windowWidth > 767) {
             $(window).on('scroll', function() {
-                if ($(window).scrollTop() > 405) {
+                if ($(window).scrollTop() > 300) {
                     $('.main-nav').addClass('fixed-menu animated slideInDown');
                 } else {
                     $('.main-nav').removeClass('fixed-menu animated slideInDown');
@@ -39,6 +24,9 @@ jQuery(function($) {
 
     // Carousel Auto Slide Off
     $('#event-carousel, #twitter-feed, #sponsor-carousel ').carousel({
+        interval: 5000
+    });
+    $('#sponsor-carousel ').carousel({
         interval: false
     });
 
@@ -146,8 +134,7 @@ jQuery(function($) {
     });
 
     map.setStyle("map_style");
-}()
-);
+}());
 
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
@@ -188,16 +175,19 @@ function initializeClock(id, endtime) {
     var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(2016, 09, 08);
+var deadline = new Date(2016, 9, 8);
 initializeClock('clockdiv', deadline);
 
 
 $('.masonryImage').click(function() {
     if ($(this).find('.hiddenDiv').toggle().is(":visible")) {
-        //alert('hiddenDiv is visible !');
         $("body").css("overflow", "hidden");
     } else {
-        //alert('hiddenDiv is hidden !');
         $("body").css("overflow", "auto");
     }
+});
+$(".cart").hover(function() {
+    $(this).find("span").fadeIn('slow');
+},
+function() { $(this).find("span").fadeOut('medium');
 });
